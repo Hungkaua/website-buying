@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>menu đa cấp với class và id</title>
+    <link rel="stylesheet" href="body.css">
+</head>
+<body>
+    <div id="header">
+        <h1>Học Class và ID</h1>
+        <p>Học Menu đa cấp</p>
+    </div>
+
+    <!-- Menu -->
+    <nav id="main-menu">
+        <ul>
+            <li class="menu-item">
+                <a href="#">Trang chủ</a>
+            </li>
+            <li class="menu-item">
+                <a href="#">Sản Phẩm</a>
+                <ul class="sub-menu">
+                    <li class="sub-menu-item"><a href="">Điện Thoại</a></li>
+                    <li class="sub-menu-item"><a href="">Máy Tính Bảng</a></li>
+                    <li class="sub-menu-item">
+                        <a href="">Laptop</a>
+                        <ul class="sub-sub-menu">
+                            <li class="sub-sub-menu-item"><a href="">Dell</a></li>
+                            <li class="sub-sub-menu-item"><a href="">Lenovo</a></li>
+                            <li class="sub-sub-menu-item"><a href="">MacBook</a></li>
+                            <li class="sub-sub-menu-item"><a href="">Asus</a></li>
+                        </ul>
+                    <li class="sub-menu-item"><a href="">Phụ Kiện</a></li>
+                </ul>
+            </li>
+            <li class="menu-item">
+                <a href="">Tin Tức</a>
+                <ul class="sub-menu">
+                    <li class="sub-menu-item"><a href="">Web Chất Lượng</a></li>
+                    <li class="sub-menu-item"><a href="">Giao Diện Web</a></li>
+                    <li class="sub-menu-item">
+                        <a href="">Người tham gia</a>
+                        <ul class="sub-sub-menu">
+                            <li class="sub-sub-menu-item"><a href="">SEO</a></li>
+                            <li class="sub-sub-menu-item"><a href="">Social Media</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li class="menu-item">
+                <a href="#">Contact</a>
+            </li>
+        </ul>
+    </nav>
+
+    <!--Nội Dung-->
+    <div id="content-wrapper">
+        <div id="content" class="box">
+            <div id="main">
+                <h2 class="title">Nội dung trang web</h2>
+                <img src="Downloads\mic.jpeg" sizes="" alt="">
+                <p>Đây là phần nội dung chính của trang web
+                    Nó sử dụng <b>class="content"</b> để định vị bố cục
+                    <b>class="box"</b> để định dang khung trắng
+                </p>
+                <p>
+                    Thanh menu phía trên <b>menu đa cấp</b> khi trỏ chuột vào sẽ tự động
+                    hiện menu con ra            
+                </p>
+                <a href="" class="btn">Xem Thêm</a>
+                <img src="images.jpg" width="150px" height="150px" alt="">
+            </div>
+        </div>
+        <div id="sidebar" class="box">
+            <h3 class="title">Sidebar</h3>
+            <img src="sidebar.png" width="50px" height="50px" alt="">
+            <p>
+                Đây là phần sidebar, cũng sử dụng <b>class="box"</b>
+                để có cùng phong cách với nội dung chính
+            </p>
+            <a href="" class="btn">Liên hệ</a>
+            <img src="BoJack.jpg" width="100px" height="100px" alt="">
+        </div>
+    </div>
+
+    <!--Footer-->
+    <div id="footer">
+        <p>&copy; 2025 PNH</p>
+    </div>
+</body>
+</html>
